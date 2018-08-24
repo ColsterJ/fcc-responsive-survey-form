@@ -79,12 +79,15 @@ html {
   }
 }
 @media (orientation: portrait) {
+  h1 {
+    font-size: 5em;
+  }
   p, label {
     font-weight: 700;
-    font-size: .8em;
+    font-size: 2em;
   }
   #main {
-    max-width: 90%;
+    max-width: 95%;
     margin: 2% auto 2% auto;
   }
   .leftSide {
@@ -97,8 +100,12 @@ html {
     width: 45%;
   }
   input, select {
-    height: 1.5em;
+    height: 2em;
     width: 90%;
+    font-size: 2em;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    width: 1em;
   }
   #number {
     width: 25%;
@@ -106,7 +113,7 @@ html {
   #submit {
     width: 95%;
     background-color: #2ecc71;
-    font-size: 1.25em;
+    font-size: 2em;
     font-family: 'Cabin', sans-serif;
     border: 0px solid;
     border-radius: 5px;
