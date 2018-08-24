@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div id="main">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">It takes all sorts to make a world. We'd love to know what kind of person you are! What makes you tick?</p>
+  <form id="survey-form">
+    <div class="question">
+      <div class="leftSide">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="rightSide">
+        <input id="name" type="text" placeholder="i.e. Mike Kasprzak" required>
+      </div>
+    </div>
+    <div class="question">
+      <div class="leftSide">
+        <label id="email-label" for="email">E-mail:</label>
+      </div>
+      <div class="rightSide">
+        <input id="email" type="email" placeholder="bigmike@example.com" required>
+      </div>
+    </div>
+    <div class="question">
+      <div class="leftSide">
+        <label id="number-label" for="number">Age:</label>
+      </div>
+      <div class="rightSide">
+        <input id="number" type="number" min=2 max=105 placeholder="25">
+        <hr>
+      </div>
+    </div>
+    
+    <div class="question">
+      <div class="leftSide">
+        <label id="ice-cream-flavor">What's your favorite flavor of ice cream?</label>
+      </div>
+      <div class="rightSide">
+        <select id="dropdown">
+          <option disabled value>Select your favorite ice cream flavor</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="cookieDough">Cookie Dough</option>
+          <option value="cookiesCream">Cookies and Cream</option>
+          <option value="saltedCaramel">Salted Caramel</option>
+          <option value="mintChocChip">Mint Chocolate Chip</option>
+          <option value="mooseTracks">Moose Tracks</option>
+          <option value="neapolitan">Neapolitan</option>
+        </select>
+        <br><br>
+        <hr>
+      </div>
+    </div>
+    
+    <div class="question">
+      <div class="leftSide">
+        <label id="personality-type">Which of these sentences best describes your personality?<br></label>
+      </div>
+      <div class="rightSide">
+        <input type="radio" name="personality" value="calm">I'm the laid-back person in most situations.<br>
+        <input type="radio" name="personality" value="squirrely">I'm the first to run when trouble arises.<br>
+        <input type="radio" name="personality" value="leader">I'm the person who takes charge in a difficult situation.
+        <hr>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="leftSide">
+        <label id="lifeEvents">Which of the following events have happened to you?</label>
+      </div>
+      <div class="rightSide">
+        <input type="checkbox" name="catscratched" value="catstratched">Got scratched by a cat.<br>
+        <input type="checkbox" name="dogbitten" value="dogbitten">Got bit by a dog.<br>
+        <input type="checkbox" name="fishglared" value="fishglared">Got glared at by a rude fish.<br>
+        <hr>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="leftSide">
+        <label>Anything else we should know?</label>
+      </div>
+      <div class="rightSide">
+        <textarea id="adthoughts" rows="10"></textarea>
+      </div>
+    </div>
+    
+    <div class="question">
+      <div class="leftSide"></div>
+      <div class="rightSide">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
+</div>
+  
+  
+
+</body>
+
+</html>
